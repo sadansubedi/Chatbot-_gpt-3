@@ -23,6 +23,8 @@ def ask_openai(message):
 
 
 '''
+# gpt-4 is not available this time ok 
+
 def ask_openai(message):
     response = openai.ChatCompletion.create(
         model = "gpt-4",
@@ -35,7 +37,6 @@ def ask_openai(message):
     answer = response.choices[0].message.content.strip()
     return answer
 
-# gpt-4 is not available this time ok 
 '''
 
 def Chatbot(request):
